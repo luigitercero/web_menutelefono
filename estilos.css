@@ -24,7 +24,7 @@ header nav {
 
 header nav ul {
     overflow: hidden;
-    list-style: none;
+    list-style: none; /*quita los corchetes */
 }
 header nav ul li {
     float: left;
@@ -33,6 +33,58 @@ header nav ul li {
 header nav ul li a {
     color: aliceblue;
     padding: 20px;
-    text-decoration: none;
+    text-decoration: none;/*se usa para poder dar pading vertical*/
     display: block;
+}
+
+
+header nav ul li img { /*agregar margen para que los iconos no queden juntos*/
+   margin-right: 10px
+
+}
+
+header nav ul li a:hover { /*con esto se puede cambiar el color cuando se pase el mouse sobre los datos*/
+    background: #037e87
+
+}
+
+@media screen and (max-width: 800px) {/*usar el menu hasta que tenga un maximo de 800 px*/
+    header nav { /*esto crea el menu */
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        left: -100%;
+        position: fixed;
+    }
+
+    header nav ul li {/*esto ordena los menu en forma vertical*/
+        margin-left: -10%;
+        display: block;
+        float:none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        
+    }
+    .menu_bar { /*menu vertical para mostrar boton de aparecer*/
+        position: fixed;
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold; 
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar img {
+        float: right;
+        font-size: 40px;
+    }
 }
