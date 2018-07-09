@@ -1,0 +1,38 @@
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+body {
+    background: #fffa;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+
+    width: 90%;
+    margin: 20px auto;
+    max-width: 10000px;
+    background: #002244
+}
+
+.menu_bar{
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
